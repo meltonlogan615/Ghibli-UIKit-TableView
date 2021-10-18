@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		53285E1C2697C35A006A6B57 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53285E1B2697C35A006A6B57 /* LaunchScreenViewController.swift */; };
+		534FF99F2680F7F500732938 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534FF99E2680F7F500732938 /* AppDelegate.swift */; };
+		534FF9A12680F7F500732938 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534FF9A02680F7F500732938 /* SceneDelegate.swift */; };
+		534FF9A32680F7F500732938 /* FilmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534FF9A22680F7F500732938 /* FilmsViewController.swift */; };
+		534FF9A62680F7F500732938 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 534FF9A42680F7F500732938 /* Main.storyboard */; };
+		534FF9A82680F7FB00732938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 534FF9A72680F7FB00732938 /* Assets.xcassets */; };
+		534FF9AB2680F7FB00732938 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 534FF9A92680F7FB00732938 /* LaunchScreen.storyboard */; };
+		534FF9BA2680F91C00732938 /* Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534FF9B32680F91B00732938 /* Wrapper.swift */; };
+		534FF9BF2680F91C00732938 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534FF9B82680F91B00732938 /* People.swift */; };
+		534FF9C2268197B800732938 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534FF9C1268197B800732938 /* Container.swift */; };
+		536CD97F2713D516005D3E56 /* FilmDetailsScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CD97E2713D516005D3E56 /* FilmDetailsScrollView.swift */; };
+		5391ADCA26839ECC008732C5 /* Films.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5391ADC926839ECC008732C5 /* Films.swift */; };
+		5391ADCE26866BDC008732C5 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5391ADCD26866BDC008732C5 /* Networking.swift */; };
+		5391ADD0268783AD008732C5 /* FilmDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5391ADCF268783AD008732C5 /* FilmDetailsViewController.swift */; };
+		5391ADE8268784ED008732C5 /* Tales from Earthsea.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADD2268784ED008732C5 /* Tales from Earthsea.jpg */; };
+		5391ADE9268784ED008732C5 /* Princess Mononoke.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADD3268784ED008732C5 /* Princess Mononoke.jpg */; };
+		5391ADEA268784ED008732C5 /* The Wind Rises.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADD4268784ED008732C5 /* The Wind Rises.jpg */; };
+		5391ADEB268784ED008732C5 /* Pom Poko.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADD5268784ED008732C5 /* Pom Poko.jpg */; };
+		5391ADEC268784ED008732C5 /* Ponyo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADD6268784ED008732C5 /* Ponyo.jpg */; };
+		5391ADED268784ED008732C5 /* The Cat Returns.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADD7268784ED008732C5 /* The Cat Returns.jpg */; };
+		5391ADEF268784ED008732C5 /* Kiki's Delivery Service.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADD9268784ED008732C5 /* Kiki's Delivery Service.jpg */; };
+		5391ADF0268784ED008732C5 /* From Up on Poppy Hill.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADDA268784ED008732C5 /* From Up on Poppy Hill.jpg */; };
+		5391ADF1268784ED008732C5 /* Whisper of the Heart.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADDB268784ED008732C5 /* Whisper of the Heart.jpg */; };
+		5391ADF2268784ED008732C5 /* The Red Turtle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADDC268784ED008732C5 /* The Red Turtle.jpg */; };
+		5391ADF3268784ED008732C5 /* When Marnie Was There.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADDD268784ED008732C5 /* When Marnie Was There.jpg */; };
+		5391ADF4268784ED008732C5 /* Only Yesterday.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADDE268784ED008732C5 /* Only Yesterday.jpg */; };
+		5391ADF5268784ED008732C5 /* Arrietty.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADDF268784ED008732C5 /* Arrietty.jpg */; };
+		5391ADF6268784ED008732C5 /* Howl's Moving Castle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADE0268784ED008732C5 /* Howl's Moving Castle.jpg */; };
+		5391ADF7268784ED008732C5 /* My Neighbors the Yamadas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADE1268784ED008732C5 /* My Neighbors the Yamadas.jpg */; };
+		5391ADF8268784ED008732C5 /* The Tale of the Princess Kaguya.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADE2268784ED008732C5 /* The Tale of the Princess Kaguya.jpg */; };
+		5391ADF9268784ED008732C5 /* Castle In The Sky.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADE3268784ED008732C5 /* Castle In The Sky.jpg */; };
+		5391ADFA268784ED008732C5 /* Porco Rosso.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADE4268784ED008732C5 /* Porco Rosso.jpg */; };
+		5391ADFB268784ED008732C5 /* Spirited Away.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADE5268784ED008732C5 /* Spirited Away.jpg */; };
+		5391ADFC268784ED008732C5 /* Grave of the Fireflies.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADE6268784ED008732C5 /* Grave of the Fireflies.jpg */; };
+		5391ADFD268784ED008732C5 /* My Neighbor Totoro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADE7268784ED008732C5 /* My Neighbor Totoro.jpg */; };
+		53BB0A5E271C870D00E41C46 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BB0A5D271C870D00E41C46 /* Endpoint.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		53285E1B2697C35A006A6B57 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		534FF99B2680F7F500732938 /* ghibli-tableview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ghibli-tableview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		534FF99E2680F7F500732938 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		534FF9A02680F7F500732938 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		534FF9A22680F7F500732938 /* FilmsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsViewController.swift; sourceTree = "<group>"; };
+		534FF9A52680F7F500732938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		534FF9A72680F7FB00732938 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		534FF9AA2680F7FB00732938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		534FF9AC2680F7FB00732938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		534FF9B32680F91B00732938 /* Wrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wrapper.swift; sourceTree = "<group>"; };
+		534FF9B82680F91B00732938 /* People.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		534FF9C1268197B800732938 /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		536CD97E2713D516005D3E56 /* FilmDetailsScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailsScrollView.swift; sourceTree = "<group>"; };
+		5391ADC926839ECC008732C5 /* Films.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Films.swift; sourceTree = "<group>"; };
+		5391ADCD26866BDC008732C5 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		5391ADCF268783AD008732C5 /* FilmDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailsViewController.swift; sourceTree = "<group>"; };
+		5391ADD2268784ED008732C5 /* Tales from Earthsea.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Tales from Earthsea.jpg"; sourceTree = "<group>"; };
+		5391ADD3268784ED008732C5 /* Princess Mononoke.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Princess Mononoke.jpg"; sourceTree = "<group>"; };
+		5391ADD4268784ED008732C5 /* The Wind Rises.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "The Wind Rises.jpg"; sourceTree = "<group>"; };
+		5391ADD5268784ED008732C5 /* Pom Poko.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pom Poko.jpg"; sourceTree = "<group>"; };
+		5391ADD6268784ED008732C5 /* Ponyo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ponyo.jpg; sourceTree = "<group>"; };
+		5391ADD7268784ED008732C5 /* The Cat Returns.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "The Cat Returns.jpg"; sourceTree = "<group>"; };
+		5391ADD9268784ED008732C5 /* Kiki's Delivery Service.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Kiki's Delivery Service.jpg"; sourceTree = "<group>"; };
+		5391ADDA268784ED008732C5 /* From Up on Poppy Hill.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "From Up on Poppy Hill.jpg"; sourceTree = "<group>"; };
+		5391ADDB268784ED008732C5 /* Whisper of the Heart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Whisper of the Heart.jpg"; sourceTree = "<group>"; };
+		5391ADDC268784ED008732C5 /* The Red Turtle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "The Red Turtle.jpg"; sourceTree = "<group>"; };
+		5391ADDD268784ED008732C5 /* When Marnie Was There.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "When Marnie Was There.jpg"; sourceTree = "<group>"; };
+		5391ADDE268784ED008732C5 /* Only Yesterday.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Only Yesterday.jpg"; sourceTree = "<group>"; };
+		5391ADDF268784ED008732C5 /* Arrietty.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Arrietty.jpg; sourceTree = "<group>"; };
+		5391ADE0268784ED008732C5 /* Howl's Moving Castle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Howl's Moving Castle.jpg"; sourceTree = "<group>"; };
+		5391ADE1268784ED008732C5 /* My Neighbors the Yamadas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "My Neighbors the Yamadas.jpg"; sourceTree = "<group>"; };
+		5391ADE2268784ED008732C5 /* The Tale of the Princess Kaguya.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "The Tale of the Princess Kaguya.jpg"; sourceTree = "<group>"; };
+		5391ADE3268784ED008732C5 /* Castle In The Sky.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Castle In The Sky.jpg"; sourceTree = "<group>"; };
+		5391ADE4268784ED008732C5 /* Porco Rosso.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Porco Rosso.jpg"; sourceTree = "<group>"; };
+		5391ADE5268784ED008732C5 /* Spirited Away.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Spirited Away.jpg"; sourceTree = "<group>"; };
+		5391ADE6268784ED008732C5 /* Grave of the Fireflies.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Grave of the Fireflies.jpg"; sourceTree = "<group>"; };
+		5391ADE7268784ED008732C5 /* My Neighbor Totoro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "My Neighbor Totoro.jpg"; sourceTree = "<group>"; };
+		53BB0A5D271C870D00E41C46 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		534FF9982680F7F500732938 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		534FF9922680F7F500732938 = {
+			isa = PBXGroup;
+			children = (
+				534FF99D2680F7F500732938 /* ghibli-tableview */,
+				534FF99C2680F7F500732938 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		534FF99C2680F7F500732938 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				534FF99B2680F7F500732938 /* ghibli-tableview.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		534FF99D2680F7F500732938 /* ghibli-tableview */ = {
+			isa = PBXGroup;
+			children = (
+				534FF99E2680F7F500732938 /* AppDelegate.swift */,
+				534FF9A02680F7F500732938 /* SceneDelegate.swift */,
+				534FF9A22680F7F500732938 /* FilmsViewController.swift */,
+				5391ADCF268783AD008732C5 /* FilmDetailsViewController.swift */,
+				536CD97E2713D516005D3E56 /* FilmDetailsScrollView.swift */,
+				534FF9A42680F7F500732938 /* Main.storyboard */,
+				534FF9A72680F7FB00732938 /* Assets.xcassets */,
+				5391ADD1268784ED008732C5 /* GhibliPosters */,
+				534FF9B22680F91B00732938 /* Models */,
+				534FF9A92680F7FB00732938 /* LaunchScreen.storyboard */,
+				53285E1B2697C35A006A6B57 /* LaunchScreenViewController.swift */,
+				534FF9AC2680F7FB00732938 /* Info.plist */,
+			);
+			path = "ghibli-tableview";
+			sourceTree = "<group>";
+		};
+		534FF9B22680F91B00732938 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				534FF9B32680F91B00732938 /* Wrapper.swift */,
+				534FF9B82680F91B00732938 /* People.swift */,
+				5391ADCD26866BDC008732C5 /* Networking.swift */,
+				534FF9C1268197B800732938 /* Container.swift */,
+				5391ADC926839ECC008732C5 /* Films.swift */,
+				53BB0A5D271C870D00E41C46 /* Endpoint.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5391ADD1268784ED008732C5 /* GhibliPosters */ = {
+			isa = PBXGroup;
+			children = (
+				5391ADD2268784ED008732C5 /* Tales from Earthsea.jpg */,
+				5391ADD3268784ED008732C5 /* Princess Mononoke.jpg */,
+				5391ADD4268784ED008732C5 /* The Wind Rises.jpg */,
+				5391ADD5268784ED008732C5 /* Pom Poko.jpg */,
+				5391ADD6268784ED008732C5 /* Ponyo.jpg */,
+				5391ADD7268784ED008732C5 /* The Cat Returns.jpg */,
+				5391ADD9268784ED008732C5 /* Kiki's Delivery Service.jpg */,
+				5391ADDA268784ED008732C5 /* From Up on Poppy Hill.jpg */,
+				5391ADDB268784ED008732C5 /* Whisper of the Heart.jpg */,
+				5391ADDC268784ED008732C5 /* The Red Turtle.jpg */,
+				5391ADDD268784ED008732C5 /* When Marnie Was There.jpg */,
+				5391ADDE268784ED008732C5 /* Only Yesterday.jpg */,
+				5391ADDF268784ED008732C5 /* Arrietty.jpg */,
+				5391ADE0268784ED008732C5 /* Howl's Moving Castle.jpg */,
+				5391ADE1268784ED008732C5 /* My Neighbors the Yamadas.jpg */,
+				5391ADE2268784ED008732C5 /* The Tale of the Princess Kaguya.jpg */,
+				5391ADE3268784ED008732C5 /* Castle In The Sky.jpg */,
+				5391ADE4268784ED008732C5 /* Porco Rosso.jpg */,
+				5391ADE5268784ED008732C5 /* Spirited Away.jpg */,
+				5391ADE6268784ED008732C5 /* Grave of the Fireflies.jpg */,
+				5391ADE7268784ED008732C5 /* My Neighbor Totoro.jpg */,
+			);
+			path = GhibliPosters;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		534FF99A2680F7F500732938 /* ghibli-tableview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 534FF9AF2680F7FB00732938 /* Build configuration list for PBXNativeTarget "ghibli-tableview" */;
+			buildPhases = (
+				534FF9972680F7F500732938 /* Sources */,
+				534FF9982680F7F500732938 /* Frameworks */,
+				534FF9992680F7F500732938 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ghibli-tableview";
+			productName = "ghibli-tableview";
+			productReference = 534FF99B2680F7F500732938 /* ghibli-tableview.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		534FF9932680F7F500732938 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					534FF99A2680F7F500732938 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 534FF9962680F7F500732938 /* Build configuration list for PBXProject "ghibli-tableview" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 534FF9922680F7F500732938;
+			productRefGroup = 534FF99C2680F7F500732938 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				534FF99A2680F7F500732938 /* ghibli-tableview */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		534FF9992680F7F500732938 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5391ADFB268784ED008732C5 /* Spirited Away.jpg in Resources */,
+				5391ADF7268784ED008732C5 /* My Neighbors the Yamadas.jpg in Resources */,
+				5391ADF3268784ED008732C5 /* When Marnie Was There.jpg in Resources */,
+				5391ADE8268784ED008732C5 /* Tales from Earthsea.jpg in Resources */,
+				5391ADF2268784ED008732C5 /* The Red Turtle.jpg in Resources */,
+				5391ADF6268784ED008732C5 /* Howl's Moving Castle.jpg in Resources */,
+				534FF9AB2680F7FB00732938 /* LaunchScreen.storyboard in Resources */,
+				5391ADF9268784ED008732C5 /* Castle In The Sky.jpg in Resources */,
+				534FF9A82680F7FB00732938 /* Assets.xcassets in Resources */,
+				5391ADEB268784ED008732C5 /* Pom Poko.jpg in Resources */,
+				5391ADFD268784ED008732C5 /* My Neighbor Totoro.jpg in Resources */,
+				5391ADE9268784ED008732C5 /* Princess Mononoke.jpg in Resources */,
+				5391ADEF268784ED008732C5 /* Kiki's Delivery Service.jpg in Resources */,
+				5391ADFC268784ED008732C5 /* Grave of the Fireflies.jpg in Resources */,
+				5391ADF1268784ED008732C5 /* Whisper of the Heart.jpg in Resources */,
+				5391ADF5268784ED008732C5 /* Arrietty.jpg in Resources */,
+				5391ADF0268784ED008732C5 /* From Up on Poppy Hill.jpg in Resources */,
+				5391ADFA268784ED008732C5 /* Porco Rosso.jpg in Resources */,
+				5391ADEC268784ED008732C5 /* Ponyo.jpg in Resources */,
+				5391ADEA268784ED008732C5 /* The Wind Rises.jpg in Resources */,
+				5391ADF8268784ED008732C5 /* The Tale of the Princess Kaguya.jpg in Resources */,
+				5391ADF4268784ED008732C5 /* Only Yesterday.jpg in Resources */,
+				534FF9A62680F7F500732938 /* Main.storyboard in Resources */,
+				5391ADED268784ED008732C5 /* The Cat Returns.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		534FF9972680F7F500732938 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				534FF9A32680F7F500732938 /* FilmsViewController.swift in Sources */,
+				5391ADD0268783AD008732C5 /* FilmDetailsViewController.swift in Sources */,
+				536CD97F2713D516005D3E56 /* FilmDetailsScrollView.swift in Sources */,
+				534FF9C2268197B800732938 /* Container.swift in Sources */,
+				5391ADCE26866BDC008732C5 /* Networking.swift in Sources */,
+				534FF9BA2680F91C00732938 /* Wrapper.swift in Sources */,
+				534FF9BF2680F91C00732938 /* People.swift in Sources */,
+				534FF99F2680F7F500732938 /* AppDelegate.swift in Sources */,
+				53BB0A5E271C870D00E41C46 /* Endpoint.swift in Sources */,
+				534FF9A12680F7F500732938 /* SceneDelegate.swift in Sources */,
+				53285E1C2697C35A006A6B57 /* LaunchScreenViewController.swift in Sources */,
+				5391ADCA26839ECC008732C5 /* Films.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		534FF9A42680F7F500732938 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				534FF9A52680F7F500732938 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		534FF9A92680F7FB00732938 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				534FF9AA2680F7FB00732938 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		534FF9AD2680F7FB00732938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		534FF9AE2680F7FB00732938 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		534FF9B02680F7FB00732938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VR7223ZYQY;
+				INFOPLIST_FILE = "ghibli-tableview/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.meltonlogan.ghibli-tableview";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		534FF9B12680F7FB00732938 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VR7223ZYQY;
+				INFOPLIST_FILE = "ghibli-tableview/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.meltonlogan.ghibli-tableview";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		534FF9962680F7F500732938 /* Build configuration list for PBXProject "ghibli-tableview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				534FF9AD2680F7FB00732938 /* Debug */,
+				534FF9AE2680F7FB00732938 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		534FF9AF2680F7FB00732938 /* Build configuration list for PBXNativeTarget "ghibli-tableview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				534FF9B02680F7FB00732938 /* Debug */,
+				534FF9B12680F7FB00732938 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 534FF9932680F7F500732938 /* Project object */;
+}

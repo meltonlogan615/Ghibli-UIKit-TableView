@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Castle In The Sky.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

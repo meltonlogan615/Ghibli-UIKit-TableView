@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "My Neighbors the Yamadas.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

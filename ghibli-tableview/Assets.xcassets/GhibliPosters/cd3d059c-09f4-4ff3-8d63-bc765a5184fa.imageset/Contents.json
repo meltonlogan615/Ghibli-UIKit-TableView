@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Howl's Moving Castle.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
