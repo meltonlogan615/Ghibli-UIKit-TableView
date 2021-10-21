@@ -9,6 +9,7 @@ import UIKit
 
 class FilmsViewController: UITableViewController {
   
+// TODO: - Update to include properties and inits
   var model = [Films]()
   
   override func viewDidLoad() {
@@ -21,10 +22,10 @@ class FilmsViewController: UITableViewController {
     navigationController?.navigationBar.tintColor = .red
     title = "Ghibli Films"
     
-    getData(view: tableView, dataType: Films.self)
+//    getData(view: tableView, dataType: Films.self)
   }
   
-  
+// TODO: - Update TableViews to reflect new data structures
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return model.count
   }
@@ -57,35 +58,35 @@ class FilmsViewController: UITableViewController {
 //    self.tableView.reloadData()
 //  }
   
-// TODO: 
+
   
   
   /**
    # getData method using generics vs explicit data types
    
    */
-  func getData<T: Decodable>(view: UITableView, dataType: T.Type) {
-    
-    let url = "https://ghibliapi.herokuapp.com/films"
-    let urlString = URL(string: url)!
-    
-    let task = URLSession.shared.dataTask(with: urlString) { data, response, error in
-      if error != nil {
-        print(error!)
-      }
-      if let data = data {
-        let decodedData = try! JSONDecoder().decode([T].self, from: data)
-        self.model = decodedData as! [Films]
-      }
-      if data != nil {
-        print(String(data: data!, encoding: .utf8) ?? "")
-        DispatchQueue.main.async {
-          view.reloadData()
-        }
-      }
-    }
-    task.resume()
-  }
+//  func getData<T: Decodable>(view: UITableView, dataType: T.Type) {
+//
+//    let url = "https://ghibliapi.herokuapp.com/films"
+//    let urlString = URL(string: url)!
+//
+//    let task = URLSession.shared.dataTask(with: urlString) { data, response, error in
+//      if error != nil {
+//        print(error!)
+//      }
+//      if let data = data {
+//        let decodedData = try! JSONDecoder().decode([T].self, from: data)
+//        self.model = decodedData as! [Films]
+//      }
+//      if data != nil {
+////        print(String(data: data!, encoding: .utf8) ?? "")
+//        DispatchQueue.main.async {
+//          view.reloadData()
+//        }
+//      }
+//    }
+//    task.resume()
+//  }
   
 }
 

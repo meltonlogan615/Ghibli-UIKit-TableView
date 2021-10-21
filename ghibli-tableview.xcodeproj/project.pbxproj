@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		530490A6271E473A00E4F4B3 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530490A5271E473A00E4F4B3 /* NetworkManager.swift */; };
+		530490A9271E495700E4F4B3 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530490A8271E495700E4F4B3 /* ErrorModel.swift */; };
+		530490AC271E4B4500E4F4B3 /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530490AB271E4B4500E4F4B3 /* LogManager.swift */; };
+		530490AE271E4BA000E4F4B3 /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530490AD271E4BA000E4F4B3 /* RequestModel.swift */; };
+		530490B0271E4BDE00E4F4B3 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530490AF271E4BDE00E4F4B3 /* ResponseModel.swift */; };
+		530490B3271E4CC600E4F4B3 /* ErrorKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530490B2271E4CC600E4F4B3 /* ErrorKey.swift */; };
+		530490B5271E4CFC00E4F4B3 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530490B4271E4CFC00E4F4B3 /* String+Extension.swift */; };
+		530490B8271E53B200E4F4B3 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530490B7271E53B200E4F4B3 /* Services.swift */; };
+		530490C3271FA94900E4F4B3 /* NetworkDataFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530490C2271FA94900E4F4B3 /* NetworkDataFlow.swift */; };
+		530490C5271FADD100E4F4B3 /* NetworkAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530490C4271FADD100E4F4B3 /* NetworkAccess.swift */; };
+		530490C7271FAFBF00E4F4B3 /* JsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530490C6271FAFBF00E4F4B3 /* JsonParser.swift */; };
+		530490C9271FB8E900E4F4B3 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530490C8271FB8E900E4F4B3 /* DataProvider.swift */; };
+		530490CB271FBA0A00E4F4B3 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530490CA271FBA0A00E4F4B3 /* EndPoints.swift */; };
 		53285E1C2697C35A006A6B57 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53285E1B2697C35A006A6B57 /* LaunchScreenViewController.swift */; };
 		534FF99F2680F7F500732938 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534FF99E2680F7F500732938 /* AppDelegate.swift */; };
 		534FF9A12680F7F500732938 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534FF9A02680F7F500732938 /* SceneDelegate.swift */; };
@@ -21,31 +34,23 @@
 		5391ADCA26839ECC008732C5 /* Films.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5391ADC926839ECC008732C5 /* Films.swift */; };
 		5391ADCE26866BDC008732C5 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5391ADCD26866BDC008732C5 /* Networking.swift */; };
 		5391ADD0268783AD008732C5 /* FilmDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5391ADCF268783AD008732C5 /* FilmDetailsViewController.swift */; };
-		5391ADE8268784ED008732C5 /* Tales from Earthsea.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADD2268784ED008732C5 /* Tales from Earthsea.jpg */; };
-		5391ADE9268784ED008732C5 /* Princess Mononoke.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADD3268784ED008732C5 /* Princess Mononoke.jpg */; };
-		5391ADEA268784ED008732C5 /* The Wind Rises.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADD4268784ED008732C5 /* The Wind Rises.jpg */; };
-		5391ADEB268784ED008732C5 /* Pom Poko.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADD5268784ED008732C5 /* Pom Poko.jpg */; };
-		5391ADEC268784ED008732C5 /* Ponyo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADD6268784ED008732C5 /* Ponyo.jpg */; };
-		5391ADED268784ED008732C5 /* The Cat Returns.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADD7268784ED008732C5 /* The Cat Returns.jpg */; };
-		5391ADEF268784ED008732C5 /* Kiki's Delivery Service.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADD9268784ED008732C5 /* Kiki's Delivery Service.jpg */; };
-		5391ADF0268784ED008732C5 /* From Up on Poppy Hill.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADDA268784ED008732C5 /* From Up on Poppy Hill.jpg */; };
-		5391ADF1268784ED008732C5 /* Whisper of the Heart.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADDB268784ED008732C5 /* Whisper of the Heart.jpg */; };
-		5391ADF2268784ED008732C5 /* The Red Turtle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADDC268784ED008732C5 /* The Red Turtle.jpg */; };
-		5391ADF3268784ED008732C5 /* When Marnie Was There.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADDD268784ED008732C5 /* When Marnie Was There.jpg */; };
-		5391ADF4268784ED008732C5 /* Only Yesterday.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADDE268784ED008732C5 /* Only Yesterday.jpg */; };
-		5391ADF5268784ED008732C5 /* Arrietty.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADDF268784ED008732C5 /* Arrietty.jpg */; };
-		5391ADF6268784ED008732C5 /* Howl's Moving Castle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADE0268784ED008732C5 /* Howl's Moving Castle.jpg */; };
-		5391ADF7268784ED008732C5 /* My Neighbors the Yamadas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADE1268784ED008732C5 /* My Neighbors the Yamadas.jpg */; };
-		5391ADF8268784ED008732C5 /* The Tale of the Princess Kaguya.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADE2268784ED008732C5 /* The Tale of the Princess Kaguya.jpg */; };
-		5391ADF9268784ED008732C5 /* Castle In The Sky.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADE3268784ED008732C5 /* Castle In The Sky.jpg */; };
-		5391ADFA268784ED008732C5 /* Porco Rosso.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADE4268784ED008732C5 /* Porco Rosso.jpg */; };
-		5391ADFB268784ED008732C5 /* Spirited Away.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADE5268784ED008732C5 /* Spirited Away.jpg */; };
-		5391ADFC268784ED008732C5 /* Grave of the Fireflies.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADE6268784ED008732C5 /* Grave of the Fireflies.jpg */; };
-		5391ADFD268784ED008732C5 /* My Neighbor Totoro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5391ADE7268784ED008732C5 /* My Neighbor Totoro.jpg */; };
 		53BB0A5E271C870D00E41C46 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BB0A5D271C870D00E41C46 /* Endpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		530490A5271E473A00E4F4B3 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		530490A8271E495700E4F4B3 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		530490AB271E4B4500E4F4B3 /* LogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
+		530490AD271E4BA000E4F4B3 /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
+		530490AF271E4BDE00E4F4B3 /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		530490B2271E4CC600E4F4B3 /* ErrorKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorKey.swift; sourceTree = "<group>"; };
+		530490B4271E4CFC00E4F4B3 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		530490B7271E53B200E4F4B3 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		530490C2271FA94900E4F4B3 /* NetworkDataFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFlow.swift; sourceTree = "<group>"; };
+		530490C4271FADD100E4F4B3 /* NetworkAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAccess.swift; sourceTree = "<group>"; };
+		530490C6271FAFBF00E4F4B3 /* JsonParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonParser.swift; sourceTree = "<group>"; };
+		530490C8271FB8E900E4F4B3 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		530490CA271FBA0A00E4F4B3 /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
 		53285E1B2697C35A006A6B57 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		534FF99B2680F7F500732938 /* ghibli-tableview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ghibli-tableview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		534FF99E2680F7F500732938 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,27 +67,6 @@
 		5391ADC926839ECC008732C5 /* Films.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Films.swift; sourceTree = "<group>"; };
 		5391ADCD26866BDC008732C5 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		5391ADCF268783AD008732C5 /* FilmDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailsViewController.swift; sourceTree = "<group>"; };
-		5391ADD2268784ED008732C5 /* Tales from Earthsea.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Tales from Earthsea.jpg"; sourceTree = "<group>"; };
-		5391ADD3268784ED008732C5 /* Princess Mononoke.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Princess Mononoke.jpg"; sourceTree = "<group>"; };
-		5391ADD4268784ED008732C5 /* The Wind Rises.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "The Wind Rises.jpg"; sourceTree = "<group>"; };
-		5391ADD5268784ED008732C5 /* Pom Poko.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pom Poko.jpg"; sourceTree = "<group>"; };
-		5391ADD6268784ED008732C5 /* Ponyo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ponyo.jpg; sourceTree = "<group>"; };
-		5391ADD7268784ED008732C5 /* The Cat Returns.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "The Cat Returns.jpg"; sourceTree = "<group>"; };
-		5391ADD9268784ED008732C5 /* Kiki's Delivery Service.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Kiki's Delivery Service.jpg"; sourceTree = "<group>"; };
-		5391ADDA268784ED008732C5 /* From Up on Poppy Hill.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "From Up on Poppy Hill.jpg"; sourceTree = "<group>"; };
-		5391ADDB268784ED008732C5 /* Whisper of the Heart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Whisper of the Heart.jpg"; sourceTree = "<group>"; };
-		5391ADDC268784ED008732C5 /* The Red Turtle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "The Red Turtle.jpg"; sourceTree = "<group>"; };
-		5391ADDD268784ED008732C5 /* When Marnie Was There.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "When Marnie Was There.jpg"; sourceTree = "<group>"; };
-		5391ADDE268784ED008732C5 /* Only Yesterday.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Only Yesterday.jpg"; sourceTree = "<group>"; };
-		5391ADDF268784ED008732C5 /* Arrietty.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Arrietty.jpg; sourceTree = "<group>"; };
-		5391ADE0268784ED008732C5 /* Howl's Moving Castle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Howl's Moving Castle.jpg"; sourceTree = "<group>"; };
-		5391ADE1268784ED008732C5 /* My Neighbors the Yamadas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "My Neighbors the Yamadas.jpg"; sourceTree = "<group>"; };
-		5391ADE2268784ED008732C5 /* The Tale of the Princess Kaguya.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "The Tale of the Princess Kaguya.jpg"; sourceTree = "<group>"; };
-		5391ADE3268784ED008732C5 /* Castle In The Sky.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Castle In The Sky.jpg"; sourceTree = "<group>"; };
-		5391ADE4268784ED008732C5 /* Porco Rosso.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Porco Rosso.jpg"; sourceTree = "<group>"; };
-		5391ADE5268784ED008732C5 /* Spirited Away.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Spirited Away.jpg"; sourceTree = "<group>"; };
-		5391ADE6268784ED008732C5 /* Grave of the Fireflies.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Grave of the Fireflies.jpg"; sourceTree = "<group>"; };
-		5391ADE7268784ED008732C5 /* My Neighbor Totoro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "My Neighbor Totoro.jpg"; sourceTree = "<group>"; };
 		53BB0A5D271C870D00E41C46 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +81,128 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		530490A3271E46E600E4F4B3 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				530490B6271E539D00E4F4B3 /* Services */,
+				530490A5271E473A00E4F4B3 /* NetworkManager.swift */,
+				530490AB271E4B4500E4F4B3 /* LogManager.swift */,
+				530490A7271E493200E4F4B3 /* NetworkModels */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		530490A4271E46F500E4F4B3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				53285E1B2697C35A006A6B57 /* LaunchScreenViewController.swift */,
+				534FF9A22680F7F500732938 /* FilmsViewController.swift */,
+				5391ADCF268783AD008732C5 /* FilmDetailsViewController.swift */,
+				536CD97E2713D516005D3E56 /* FilmDetailsScrollView.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		530490A7271E493200E4F4B3 /* NetworkModels */ = {
+			isa = PBXGroup;
+			children = (
+				530490A8271E495700E4F4B3 /* ErrorModel.swift */,
+				530490AD271E4BA000E4F4B3 /* RequestModel.swift */,
+				530490AF271E4BDE00E4F4B3 /* ResponseModel.swift */,
+			);
+			path = NetworkModels;
+			sourceTree = "<group>";
+		};
+		530490AA271E49E100E4F4B3 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				534FF99E2680F7F500732938 /* AppDelegate.swift */,
+				534FF9A02680F7F500732938 /* SceneDelegate.swift */,
+				534FF9AC2680F7FB00732938 /* Info.plist */,
+				534FF9A72680F7FB00732938 /* Assets.xcassets */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		530490B1271E4CA900E4F4B3 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				530490B2271E4CC600E4F4B3 /* ErrorKey.swift */,
+				530490B4271E4CFC00E4F4B3 /* String+Extension.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		530490B6271E539D00E4F4B3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				530490B7271E53B200E4F4B3 /* Services.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		530490B9271F506100E4F4B3 /* YusufDemircisSolution */ = {
+			isa = PBXGroup;
+			children = (
+				530490A3271E46E600E4F4B3 /* Networking */,
+				530490B1271E4CA900E4F4B3 /* Utilities */,
+			);
+			path = YusufDemircisSolution;
+			sourceTree = "<group>";
+		};
+		530490BA271FA7E300E4F4B3 /* NivBen-PorathsSolution */ = {
+			isa = PBXGroup;
+			children = (
+				530490BE271FA86100E4F4B3 /* DataProvider */,
+				530490C0271FA88A00E4F4B3 /* NetworkAccess */,
+				530490BF271FA87700E4F4B3 /* Parsing */,
+				530490BB271FA83B00E4F4B3 /* EndPoints */,
+			);
+			path = "NivBen-PorathsSolution";
+			sourceTree = "<group>";
+		};
+		530490BB271FA83B00E4F4B3 /* EndPoints */ = {
+			isa = PBXGroup;
+			children = (
+				530490CA271FBA0A00E4F4B3 /* EndPoints.swift */,
+			);
+			path = EndPoints;
+			sourceTree = "<group>";
+		};
+		530490BE271FA86100E4F4B3 /* DataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				530490C8271FB8E900E4F4B3 /* DataProvider.swift */,
+				530490C2271FA94900E4F4B3 /* NetworkDataFlow.swift */,
+			);
+			path = DataProvider;
+			sourceTree = "<group>";
+		};
+		530490BF271FA87700E4F4B3 /* Parsing */ = {
+			isa = PBXGroup;
+			children = (
+				530490C6271FAFBF00E4F4B3 /* JsonParser.swift */,
+			);
+			path = Parsing;
+			sourceTree = "<group>";
+		};
+		530490C0271FA88A00E4F4B3 /* NetworkAccess */ = {
+			isa = PBXGroup;
+			children = (
+				530490C4271FADD100E4F4B3 /* NetworkAccess.swift */,
+			);
+			path = NetworkAccess;
+			sourceTree = "<group>";
+		};
+		530490C1271FA8A200E4F4B3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				534FF9A92680F7FB00732938 /* LaunchScreen.storyboard */,
+				534FF9A42680F7F500732938 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		534FF9922680F7F500732938 = {
 			isa = PBXGroup;
 			children = (
@@ -116,18 +222,12 @@
 		534FF99D2680F7F500732938 /* ghibli-tableview */ = {
 			isa = PBXGroup;
 			children = (
-				534FF99E2680F7F500732938 /* AppDelegate.swift */,
-				534FF9A02680F7F500732938 /* SceneDelegate.swift */,
-				534FF9A22680F7F500732938 /* FilmsViewController.swift */,
-				5391ADCF268783AD008732C5 /* FilmDetailsViewController.swift */,
-				536CD97E2713D516005D3E56 /* FilmDetailsScrollView.swift */,
-				534FF9A42680F7F500732938 /* Main.storyboard */,
-				534FF9A72680F7FB00732938 /* Assets.xcassets */,
-				5391ADD1268784ED008732C5 /* GhibliPosters */,
+				530490AA271E49E100E4F4B3 /* SupportFiles */,
 				534FF9B22680F91B00732938 /* Models */,
-				534FF9A92680F7FB00732938 /* LaunchScreen.storyboard */,
-				53285E1B2697C35A006A6B57 /* LaunchScreenViewController.swift */,
-				534FF9AC2680F7FB00732938 /* Info.plist */,
+				530490C1271FA8A200E4F4B3 /* Views */,
+				530490A4271E46F500E4F4B3 /* Controllers */,
+				530490BA271FA7E300E4F4B3 /* NivBen-PorathsSolution */,
+				530490B9271F506100E4F4B3 /* YusufDemircisSolution */,
 			);
 			path = "ghibli-tableview";
 			sourceTree = "<group>";
@@ -143,34 +243,6 @@
 				53BB0A5D271C870D00E41C46 /* Endpoint.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		5391ADD1268784ED008732C5 /* GhibliPosters */ = {
-			isa = PBXGroup;
-			children = (
-				5391ADD2268784ED008732C5 /* Tales from Earthsea.jpg */,
-				5391ADD3268784ED008732C5 /* Princess Mononoke.jpg */,
-				5391ADD4268784ED008732C5 /* The Wind Rises.jpg */,
-				5391ADD5268784ED008732C5 /* Pom Poko.jpg */,
-				5391ADD6268784ED008732C5 /* Ponyo.jpg */,
-				5391ADD7268784ED008732C5 /* The Cat Returns.jpg */,
-				5391ADD9268784ED008732C5 /* Kiki's Delivery Service.jpg */,
-				5391ADDA268784ED008732C5 /* From Up on Poppy Hill.jpg */,
-				5391ADDB268784ED008732C5 /* Whisper of the Heart.jpg */,
-				5391ADDC268784ED008732C5 /* The Red Turtle.jpg */,
-				5391ADDD268784ED008732C5 /* When Marnie Was There.jpg */,
-				5391ADDE268784ED008732C5 /* Only Yesterday.jpg */,
-				5391ADDF268784ED008732C5 /* Arrietty.jpg */,
-				5391ADE0268784ED008732C5 /* Howl's Moving Castle.jpg */,
-				5391ADE1268784ED008732C5 /* My Neighbors the Yamadas.jpg */,
-				5391ADE2268784ED008732C5 /* The Tale of the Princess Kaguya.jpg */,
-				5391ADE3268784ED008732C5 /* Castle In The Sky.jpg */,
-				5391ADE4268784ED008732C5 /* Porco Rosso.jpg */,
-				5391ADE5268784ED008732C5 /* Spirited Away.jpg */,
-				5391ADE6268784ED008732C5 /* Grave of the Fireflies.jpg */,
-				5391ADE7268784ED008732C5 /* My Neighbor Totoro.jpg */,
-			);
-			path = GhibliPosters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,30 +302,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5391ADFB268784ED008732C5 /* Spirited Away.jpg in Resources */,
-				5391ADF7268784ED008732C5 /* My Neighbors the Yamadas.jpg in Resources */,
-				5391ADF3268784ED008732C5 /* When Marnie Was There.jpg in Resources */,
-				5391ADE8268784ED008732C5 /* Tales from Earthsea.jpg in Resources */,
-				5391ADF2268784ED008732C5 /* The Red Turtle.jpg in Resources */,
-				5391ADF6268784ED008732C5 /* Howl's Moving Castle.jpg in Resources */,
 				534FF9AB2680F7FB00732938 /* LaunchScreen.storyboard in Resources */,
-				5391ADF9268784ED008732C5 /* Castle In The Sky.jpg in Resources */,
 				534FF9A82680F7FB00732938 /* Assets.xcassets in Resources */,
-				5391ADEB268784ED008732C5 /* Pom Poko.jpg in Resources */,
-				5391ADFD268784ED008732C5 /* My Neighbor Totoro.jpg in Resources */,
-				5391ADE9268784ED008732C5 /* Princess Mononoke.jpg in Resources */,
-				5391ADEF268784ED008732C5 /* Kiki's Delivery Service.jpg in Resources */,
-				5391ADFC268784ED008732C5 /* Grave of the Fireflies.jpg in Resources */,
-				5391ADF1268784ED008732C5 /* Whisper of the Heart.jpg in Resources */,
-				5391ADF5268784ED008732C5 /* Arrietty.jpg in Resources */,
-				5391ADF0268784ED008732C5 /* From Up on Poppy Hill.jpg in Resources */,
-				5391ADFA268784ED008732C5 /* Porco Rosso.jpg in Resources */,
-				5391ADEC268784ED008732C5 /* Ponyo.jpg in Resources */,
-				5391ADEA268784ED008732C5 /* The Wind Rises.jpg in Resources */,
-				5391ADF8268784ED008732C5 /* The Tale of the Princess Kaguya.jpg in Resources */,
-				5391ADF4268784ED008732C5 /* Only Yesterday.jpg in Resources */,
 				534FF9A62680F7F500732938 /* Main.storyboard in Resources */,
-				5391ADED268784ED008732C5 /* The Cat Returns.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,17 +315,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				530490C3271FA94900E4F4B3 /* NetworkDataFlow.swift in Sources */,
 				534FF9A32680F7F500732938 /* FilmsViewController.swift in Sources */,
 				5391ADD0268783AD008732C5 /* FilmDetailsViewController.swift in Sources */,
 				536CD97F2713D516005D3E56 /* FilmDetailsScrollView.swift in Sources */,
+				530490B5271E4CFC00E4F4B3 /* String+Extension.swift in Sources */,
 				534FF9C2268197B800732938 /* Container.swift in Sources */,
+				530490B8271E53B200E4F4B3 /* Services.swift in Sources */,
+				530490C7271FAFBF00E4F4B3 /* JsonParser.swift in Sources */,
+				530490A6271E473A00E4F4B3 /* NetworkManager.swift in Sources */,
+				530490C5271FADD100E4F4B3 /* NetworkAccess.swift in Sources */,
 				5391ADCE26866BDC008732C5 /* Networking.swift in Sources */,
+				530490AC271E4B4500E4F4B3 /* LogManager.swift in Sources */,
+				530490AE271E4BA000E4F4B3 /* RequestModel.swift in Sources */,
 				534FF9BA2680F91C00732938 /* Wrapper.swift in Sources */,
 				534FF9BF2680F91C00732938 /* People.swift in Sources */,
+				530490B3271E4CC600E4F4B3 /* ErrorKey.swift in Sources */,
+				530490CB271FBA0A00E4F4B3 /* EndPoints.swift in Sources */,
 				534FF99F2680F7F500732938 /* AppDelegate.swift in Sources */,
 				53BB0A5E271C870D00E41C46 /* Endpoint.swift in Sources */,
+				530490C9271FB8E900E4F4B3 /* DataProvider.swift in Sources */,
 				534FF9A12680F7F500732938 /* SceneDelegate.swift in Sources */,
 				53285E1C2697C35A006A6B57 /* LaunchScreenViewController.swift in Sources */,
+				530490B0271E4BDE00E4F4B3 /* ResponseModel.swift in Sources */,
+				530490A9271E495700E4F4B3 /* ErrorModel.swift in Sources */,
 				5391ADCA26839ECC008732C5 /* Films.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

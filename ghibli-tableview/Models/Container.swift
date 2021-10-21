@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Container: Decodable {
+class Container: RequestModel, Decodable {
   var offset:  Int?  // The requested offset (skipped results) of the call
   var limit:   Int?  // The requested result limit
   var total:   Int?  // The total number of results available
