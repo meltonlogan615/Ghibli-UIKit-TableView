@@ -9,21 +9,49 @@ import UIKit
 
 class FilmsViewController: UITableViewController {
   
-// TODO: - Update to include properties and inits
+  let dataProvider: DataProvider
   var model = [Films]()
   
+  // MARK: - inits
+  init(dataprovider: DataProvider) {
+    self.dataProvider = dataprovider
+    super.init(nibName: nil, bundle: nil)
+  }
+  
+  required init?(coder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+  }
+  
+  // MARK: - Life Cycle
   override func viewDidLoad() {
     super.viewDidLoad()
+    print("View Did Load")
     tableView.delegate = self
     tableView.dataSource = self
     
+    // MARK: - NavigationController
     navigationController?.navigationBar.prefersLargeTitles = true
       //    navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Year", style: .plain, target: self, action: #selector(changeSortingMethod))
     navigationController?.navigationBar.tintColor = .red
     title = "Ghibli Films"
     
-//    getData(view: tableView, dataType: Films.self)
+    loadMovies()
   }
+    
+// MARK: - Load Data
+    private func loadMovies() {
+      dataProvider.getMovies() { [weak self] (moviesResult: Result<Films, Error>) in
+        guard let self = self else { return }
+        switch moviesResult {
+          case .success(let model):
+            self.model = [model]
+            self.tableView.reloadData()
+          case .failure(let error):
+            print(error)
+        }
+      }
+    }
+  
   
 // TODO: - Update TableViews to reflect new data structures
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

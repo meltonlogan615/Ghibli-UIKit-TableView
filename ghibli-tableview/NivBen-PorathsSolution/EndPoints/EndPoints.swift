@@ -36,15 +36,22 @@ extension EndPoints {
 }
 
 extension EndPoints {
-// TODO: - Update method names and properties to API Data
-  static func popularMovies(atPage page: String) -> Self {
-    let pageQueryItem = URLQueryItem(name: "page", value: page)
-// TODO: - Remove queryItems from params
-    return EndPoints(path: "3/movie/popular", queryItems: [pageQueryItem])
+
+  static func getAllFilms() -> Self {
+    return EndPoints(path: "films")
   }
   
-// TODO: - Update method names and properties to API Data
-  static func movie(movieId id: String) -> Self {
-    EndPoints(path: "3/movie/\(id)")
+  static func getMovieDetails(movieId id: String) -> Self {
+    EndPoints(path: "films/\(id)")
   }
+  
+//  Provided in the original source code:
+//  static func popularMovies(atPage page : String) -> Self {
+//    let pageQueryItem = URLQueryItem(name: "page", value: page)
+//    return Endpoint(path: "3/movie/popular", queryItems: [pageQueryItem])
+//  }
+//
+//  static func movie(withId id : String) -> Self {
+//    Endpoint(path: "3/movie/\(id)")
+//  }
 }
