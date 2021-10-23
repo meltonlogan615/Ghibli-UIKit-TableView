@@ -18,4 +18,5 @@ struct Films: Codable, Identifiable {
   var release_date: String
   var running_time: String
   var rt_score: String
+  let films: [Films]
 }

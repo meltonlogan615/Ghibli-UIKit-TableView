@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Endpoint: String, Codable {
+enum Objects: String, Codable {
   case Films
   case People
 //  case locations

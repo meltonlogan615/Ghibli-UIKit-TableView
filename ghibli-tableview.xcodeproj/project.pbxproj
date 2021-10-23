@@ -27,14 +27,12 @@
 		534FF9A62680F7F500732938 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 534FF9A42680F7F500732938 /* Main.storyboard */; };
 		534FF9A82680F7FB00732938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 534FF9A72680F7FB00732938 /* Assets.xcassets */; };
 		534FF9AB2680F7FB00732938 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 534FF9A92680F7FB00732938 /* LaunchScreen.storyboard */; };
-		534FF9BA2680F91C00732938 /* Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534FF9B32680F91B00732938 /* Wrapper.swift */; };
 		534FF9BF2680F91C00732938 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534FF9B82680F91B00732938 /* People.swift */; };
-		534FF9C2268197B800732938 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534FF9C1268197B800732938 /* Container.swift */; };
 		536CD97F2713D516005D3E56 /* FilmDetailsScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CD97E2713D516005D3E56 /* FilmDetailsScrollView.swift */; };
 		5391ADCA26839ECC008732C5 /* Films.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5391ADC926839ECC008732C5 /* Films.swift */; };
 		5391ADCE26866BDC008732C5 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5391ADCD26866BDC008732C5 /* Networking.swift */; };
 		5391ADD0268783AD008732C5 /* FilmDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5391ADCF268783AD008732C5 /* FilmDetailsViewController.swift */; };
-		53BB0A5E271C870D00E41C46 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BB0A5D271C870D00E41C46 /* Endpoint.swift */; };
+		53BB0A5E271C870D00E41C46 /* Objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BB0A5D271C870D00E41C46 /* Objects.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,15 +57,13 @@
 		534FF9A52680F7F500732938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		534FF9A72680F7FB00732938 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		534FF9AA2680F7FB00732938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		534FF9B32680F91B00732938 /* Wrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wrapper.swift; sourceTree = "<group>"; };
 		534FF9B82680F91B00732938 /* People.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
-		534FF9C1268197B800732938 /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
 		536CD97E2713D516005D3E56 /* FilmDetailsScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailsScrollView.swift; sourceTree = "<group>"; };
 		5391ADC926839ECC008732C5 /* Films.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Films.swift; sourceTree = "<group>"; };
 		5391ADCD26866BDC008732C5 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		5391ADCF268783AD008732C5 /* FilmDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailsViewController.swift; sourceTree = "<group>"; };
 		5394B28627225C5F005B1184 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		53BB0A5D271C870D00E41C46 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		53BB0A5D271C870D00E41C46 /* Objects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objects.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,12 +231,10 @@
 		534FF9B22680F91B00732938 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				534FF9B32680F91B00732938 /* Wrapper.swift */,
 				534FF9B82680F91B00732938 /* People.swift */,
 				5391ADCD26866BDC008732C5 /* Networking.swift */,
-				534FF9C1268197B800732938 /* Container.swift */,
 				5391ADC926839ECC008732C5 /* Films.swift */,
-				53BB0A5D271C870D00E41C46 /* Endpoint.swift */,
+				53BB0A5D271C870D00E41C46 /* Objects.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -320,7 +314,6 @@
 				5391ADD0268783AD008732C5 /* FilmDetailsViewController.swift in Sources */,
 				536CD97F2713D516005D3E56 /* FilmDetailsScrollView.swift in Sources */,
 				530490B5271E4CFC00E4F4B3 /* String+Extension.swift in Sources */,
-				534FF9C2268197B800732938 /* Container.swift in Sources */,
 				530490B8271E53B200E4F4B3 /* Services.swift in Sources */,
 				530490C7271FAFBF00E4F4B3 /* JsonParser.swift in Sources */,
 				530490A6271E473A00E4F4B3 /* NetworkManager.swift in Sources */,
@@ -328,12 +321,11 @@
 				5391ADCE26866BDC008732C5 /* Networking.swift in Sources */,
 				530490AC271E4B4500E4F4B3 /* LogManager.swift in Sources */,
 				530490AE271E4BA000E4F4B3 /* RequestModel.swift in Sources */,
-				534FF9BA2680F91C00732938 /* Wrapper.swift in Sources */,
 				534FF9BF2680F91C00732938 /* People.swift in Sources */,
 				530490B3271E4CC600E4F4B3 /* ErrorKey.swift in Sources */,
 				530490CB271FBA0A00E4F4B3 /* EndPoints.swift in Sources */,
 				534FF99F2680F7F500732938 /* AppDelegate.swift in Sources */,
-				53BB0A5E271C870D00E41C46 /* Endpoint.swift in Sources */,
+				53BB0A5E271C870D00E41C46 /* Objects.swift in Sources */,
 				530490C9271FB8E900E4F4B3 /* DataProvider.swift in Sources */,
 				534FF9A12680F7F500732938 /* SceneDelegate.swift in Sources */,
 				53285E1C2697C35A006A6B57 /* LaunchScreenViewController.swift in Sources */,

@@ -9,23 +9,23 @@ import UIKit
 
 class FilmsViewController: UITableViewController {
   
-  let dataProvider: DataProvider
+  var dataProvider = DataProvider()
   var model = [Films]()
   
   // MARK: - inits
-  init(dataprovider: DataProvider) {
-    self.dataProvider = dataprovider
-    super.init(nibName: nil, bundle: nil)
-  }
-  
-  required init?(coder: NSCoder) {
-    fatalError("init(coder:) has not been implemented")
-  }
+//  init(dataprovider: DataProvider) {
+//    self.dataProvider = dataprovider
+//    super.init(nibName: nil, bundle: nil)
+//  }
+//
+//  required init?(coder: NSCoder) {
+//    fatalError("init(coder:) has not been implemented")
+//  }
   
   // MARK: - Life Cycle
   override func viewDidLoad() {
     super.viewDidLoad()
-    print("View Did Load")
+    
     tableView.delegate = self
     tableView.dataSource = self
     
