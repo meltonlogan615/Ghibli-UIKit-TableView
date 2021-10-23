@@ -18,13 +18,11 @@ struct JsonParser {
     self.decoder = decoder
   }
   
-  func decode<T: Decodable>() -> Result<T, Error> {
-      //    Provided in the original source code, but is not required for this purpose... I don't think
-      //    decoder.keyDecodingStrategy = .convertFromSnakeCase
-    print("*** Dictionary or Array? ***")
+  func decode<T: Decodable>() -> Result<[T], Error> {
     do {
-      print("*** I'm going to work ? ***")
-      let decodedObject = try decoder.decode(T.self, from: data)
+      print("*** Am I going to work 😬? ***")
+      let decodedObject = try decoder.decode([T].self, from: data)
+      print("*** I WORKED!!! ***")
       return .success(decodedObject)
     } catch {
       print("*** Nah, I break ***")

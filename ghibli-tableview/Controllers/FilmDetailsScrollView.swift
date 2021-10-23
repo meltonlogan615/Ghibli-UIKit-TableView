@@ -11,8 +11,6 @@ class FilmDetailsScrollView: UIViewController {
   
   var filmDetails: Films?
   var posters = [String]()
-  var imageIndex = 0
-  
   
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,44 +31,68 @@ class FilmDetailsScrollView: UIViewController {
       backgroundImage.contentMode = .scaleAspectFill
       view.addSubview(backgroundImage)
       
-//      let segmentController = UISegmentedControl()
-//      segmentController.frame = CGRect(x: leadingEdge, y: 100, width: trailingEdge - 20, height: 20)
-//      segmentController.insertSegment(withTitle: "Film", at: 1, animated: true)
-//      segmentController.insertSegment(withTitle: "Characters", at: 2, animated: true)
-//      view.addSubview(segmentController)
       
       let backgroundFilter = UIBlurEffect(style: .regular)
       let blurredBackground = UIVisualEffectView(effect: backgroundFilter)
       blurredBackground.frame = CGRect(x: 0, y: 0, width: view.frame.maxX, height: view.frame.maxY)
       view.addSubview(blurredBackground)
       
+      let segmentController = UISegmentedControl()
+      segmentController.frame = CGRect(x: leadingEdge, y: 100, width: trailingEdge - 20, height: 30)
+      segmentController.insertSegment(withTitle: "Film", at: 1, animated: true)
+      segmentController.insertSegment(withTitle: "Characters", at: 2, animated: true)
+      view.addSubview(segmentController)
       
       let posterContainer = UIImageView()
-      posterContainer.frame = CGRect(x: leadingEdge, y: 120, width: trailingEdge, height: view.bounds.height / 3)
+      posterContainer.frame = CGRect(x: leadingEdge, y: segmentController.frame.maxY + 20, width: trailingEdge, height: view.bounds.height / 3)
       posterContainer.image = UIImage(named: "\(film.id)")
       posterContainer.contentMode = .scaleAspectFit
       posterContainer.sizeThatFits(CGSize(width: view.frame.width - 80, height: 120))
-        //    print(posters[imageIndex])a
       view.addSubview(posterContainer)
       
       let directorLabel = UILabel()
-      directorLabel.frame = CGRect(x: leadingEdge, y: posterContainer.frame.maxY + 10, width: trailingEdge, height: 20)
-      directorLabel.text = "Directed By: \(film.director)"
+      directorLabel.frame = CGRect(x: leadingEdge, y: posterContainer.frame.maxY + 10, width: 125, height: 20)
+      directorLabel.text = "Directed By: "
       view.addSubview(directorLabel)
       
+      let directorInfo = UILabel()
+      directorInfo.frame = CGRect(x: trailingEdge - 200, y: posterContainer.frame.maxY + 10, width: 150, height: 20)
+      directorInfo.text = "\(film.director)"
+      view.addSubview(directorInfo)
+      
       let producerLabel = UILabel()
-      producerLabel.frame = CGRect(x: leadingEdge, y: directorLabel.frame.maxY + 5, width: trailingEdge, height: 20)
-      producerLabel.text = "Produced By: \(film.producer)"
+      producerLabel.frame = CGRect(x: leadingEdge, y: directorLabel.frame.maxY + 5, width: 125, height: 20)
+      producerLabel.text = "Produced By: "
       view.addSubview(producerLabel)
       
+      let producerInfo = UILabel()
+      producerInfo.frame = CGRect(x: trailingEdge - 200, y: directorLabel.frame.maxY + 5, width: 150, height: 20)
+      producerInfo.text = "\(film.producer)"
+      view.addSubview(producerInfo)
+      
       let yearLabel = UILabel()
-      yearLabel.frame  = CGRect(x: leadingEdge, y: producerLabel.frame.maxY + 5, width: trailingEdge, height: 20)
-      yearLabel.text = "Year Released: \(film.release_date)"
+      yearLabel.frame  = CGRect(x: leadingEdge, y: producerLabel.frame.maxY + 5, width: 125, height: 20)
+      yearLabel.text = "Year Released: "
       yearLabel.numberOfLines = 0
       view.addSubview(yearLabel)
       
+      let yearInfo = UILabel()
+      yearInfo.frame  = CGRect(x: trailingEdge - 200, y: producerLabel.frame.maxY + 5, width: 150, height: 20)
+      yearInfo.text = "\(film.release_date)"
+      view.addSubview(yearInfo)
+      
+      let rottenTomatoesLabel = UILabel()
+      rottenTomatoesLabel.frame = CGRect(x: leadingEdge, y: yearLabel.frame.maxY + 5, width: 125, height: 20)
+      rottenTomatoesLabel.text = "Rating: "
+      view.addSubview(rottenTomatoesLabel)
+      
+      let rottenTomatoesInfo = UILabel()
+      rottenTomatoesInfo.frame = CGRect(x: trailingEdge - 200, y: yearLabel.frame.maxY + 5, width: 150, height: 20)
+      rottenTomatoesInfo.text = "\(film.rt_score)%"
+      view.addSubview(rottenTomatoesInfo)
+      
       let descriptionLabel = UILabel()
-      descriptionLabel.frame = CGRect(x: leadingEdge, y: yearLabel.frame.maxY + 5, width: trailingEdge, height: 20)
+      descriptionLabel.frame = CGRect(x: leadingEdge, y: rottenTomatoesLabel.frame.maxY + 5, width: trailingEdge, height: 20)
       descriptionLabel.text = "Description:"
       descriptionLabel.font = UIFont(name: "Helvetica-Bold", size: 17)
       view.addSubview(descriptionLabel)
@@ -85,16 +107,4 @@ class FilmDetailsScrollView: UIViewController {
       descriptionText.sizeToFit()
       view.addSubview(descriptionText)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
