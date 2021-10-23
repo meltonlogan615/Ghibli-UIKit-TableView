@@ -22,7 +22,7 @@ extension EndPoints {
    
     var components = URLComponents()
     components.scheme = "https"
-    components.host = "ghibliapi.herokuapp.com/"
+    components.host = "ghibliapi.herokuapp.com"
     components.path = "/\(path)"
 
 //    Provided in the original source code, but is not required for this purpose... I don't think
@@ -31,6 +31,7 @@ extension EndPoints {
     guard let url = components.url else {
       preconditionFailure("Invalid URL components: \(components)")
     }
+    print(url)
     return url
   }
 }
