@@ -21,6 +21,7 @@ class FilmDetailsViewController: UIViewController {
     let leadingEdge = (view.frame.minX + 20)
     
     navigationController?.navigationBar.prefersLargeTitles = false
+    
     navigationController?.navigationBar.tintColor = .red
     title = film.original_title
     

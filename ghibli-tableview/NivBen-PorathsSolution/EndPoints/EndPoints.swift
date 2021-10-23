@@ -31,7 +31,6 @@ extension EndPoints {
     guard let url = components.url else {
       preconditionFailure("Invalid URL components: \(components)")
     }
-    print(url)
     return url
   }
 }
@@ -42,17 +41,13 @@ extension EndPoints {
     return EndPoints(path: "films")
   }
   
+  // May not be necessary seeing as how there is a call in the FilmsViewController on the didSelectRowAt
+  // Could possibly be repurposed to work within a search method
   static func getMovieDetails(movieId id: String) -> Self {
     EndPoints(path: "films/\(id)")
   }
   
-//  Provided in the original source code:
-//  static func popularMovies(atPage page : String) -> Self {
-//    let pageQueryItem = URLQueryItem(name: "page", value: page)
-//    return Endpoint(path: "3/movie/popular", queryItems: [pageQueryItem])
-//  }
-//
-//  static func movie(withId id : String) -> Self {
-//    Endpoint(path: "3/movie/\(id)")
-//  }
+  static func getAllPeople() -> Self {
+    return EndPoints(path: "people")
+  }
 }

@@ -12,15 +12,7 @@ class FilmsViewController: UITableViewController {
   var dataProvider = DataProvider()
   var model = [Films]()
   
-  // MARK: - inits
-//  init(dataprovider: DataProvider) {
-//    self.dataProvider = dataprovider
-//    super.init(nibName: nil, bundle: nil)
-//  }
-//
-//  required init?(coder: NSCoder) {
-//    fatalError("init(coder:) has not been implemented")
-//  }
+
   
   // MARK: - Life Cycle
   override func viewDidLoad() {
@@ -40,17 +32,18 @@ class FilmsViewController: UITableViewController {
     
 // MARK: - Load Data
     private func loadMovies() {
-      dataProvider.getMovies() { [weak self] (moviesResult: Result<Films, Error>) in
+      dataProvider.getMovies() { [weak self] (moviesResult: Result<[Films], Error>) in
         guard let self = self else { return }
         switch moviesResult {
           case .success(let model):
-            self.model = [model]
+            self.model = model as [Films]
             self.tableView.reloadData()
           case .failure(let error):
             print(error)
         }
       }
     }
+  
   
   
 // TODO: - Update TableViews to reflect new data structures
