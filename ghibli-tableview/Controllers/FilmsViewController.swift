@@ -24,6 +24,7 @@ class FilmsViewController: UITableViewController {
     // MARK: - NavigationController
     navigationController?.navigationBar.prefersLargeTitles = true
       //    navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Year", style: .plain, target: self, action: #selector(changeSortingMethod))
+    navigationController?.navigationBar.isTranslucent = true
     navigationController?.navigationBar.tintColor = .red
     title = "Ghibli Films"
     
@@ -53,6 +54,7 @@ class FilmsViewController: UITableViewController {
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell", for: indexPath)
+    
     cell.imageView!.frame = CGRect(x: cell.frame.minX, y: cell.frame.minY, width: 30, height: 60)
     cell.imageView!.image = UIImage(named: "\(model[indexPath.row].id)")
     cell.textLabel?.text = model[indexPath.row].title
@@ -77,36 +79,6 @@ class FilmsViewController: UITableViewController {
 //  @objc func changeSortingMethod() {
 //    model.sorted() { $0.release_date > $1.release_date }
 //    self.tableView.reloadData()
-//  }
-  
-
-  
-  
-  /**
-   # getData method using generics vs explicit data types
-   
-   */
-//  func getData<T: Decodable>(view: UITableView, dataType: T.Type) {
-//
-//    let url = "https://ghibliapi.herokuapp.com/films"
-//    let urlString = URL(string: url)!
-//
-//    let task = URLSession.shared.dataTask(with: urlString) { data, response, error in
-//      if error != nil {
-//        print(error!)
-//      }
-//      if let data = data {
-//        let decodedData = try! JSONDecoder().decode([T].self, from: data)
-//        self.model = decodedData as! [Films]
-//      }
-//      if data != nil {
-////        print(String(data: data!, encoding: .utf8) ?? "")
-//        DispatchQueue.main.async {
-//          view.reloadData()
-//        }
-//      }
-//    }
-//    task.resume()
 //  }
   
 }

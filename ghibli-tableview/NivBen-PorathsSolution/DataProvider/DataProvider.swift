@@ -27,4 +27,11 @@ class DataProvider {
     }
   }
   
+  func getPeople<T: Decodable>(completion: @escaping (Result<[T], Error>) -> Void) {
+    let peopleEndpoint = EndPoints.getAllPeople()
+    networkDataFlow.getData(for: peopleEndpoint.endpointURL) { (result: Result<[T], Error>) in
+      completion(result)
+    }
+  }
+  
 }

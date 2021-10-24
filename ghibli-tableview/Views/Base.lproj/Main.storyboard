@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="972-bb-htd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TqA-Jv-Coq">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -52,7 +53,36 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y7d-Jq-dWi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1853.6231884057972" y="104.46428571428571"/>
+            <point key="canvasLocation" x="2763.768115942029" y="104.46428571428571"/>
+        </scene>
+        <!--People View Controller-->
+        <scene sceneID="lvF-T1-p6h">
+            <objects>
+                <tableViewController id="HaV-77-dRn" customClass="PeopleViewController" customModule="ghibli_tableview" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="qAy-6V-jss">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PeopleCell" id="DDn-bo-gGR">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DDn-bo-gGR" id="wVL-yQ-fx9">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="HaV-77-dRn" id="Ait-vg-S8g"/>
+                            <outlet property="delegate" destination="HaV-77-dRn" id="IUL-jo-bb1"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Kdb-ag-01Z"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ZK-C3-io9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2762" y="905"/>
         </scene>
         <!--Film Details View Controller-->
         <scene sceneID="lyf-lV-Khg">
@@ -81,13 +111,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Q6-Mx-q4y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2704" y="104"/>
+            <point key="canvasLocation" x="3613.04347826087" y="103.79464285714285"/>
         </scene>
-        <!--Characters-->
+        <!--Films-->
         <scene sceneID="Ruh-mz-YaR">
             <objects>
                 <navigationController storyboardIdentifier="NavController" automaticallyAdjustsScrollViewInsets="NO" id="972-bb-htd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Characters" selectedImage="person.3.fill" catalog="system" id="PSJ-4d-4j1"/>
+                    <tabBarItem key="tabBarItem" title="Films" image="film" catalog="system" id="PSJ-4d-4j1">
+                        <imageReference key="selectedImage" image="film" catalog="system" symbolScale="default"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qJO-ik-lDQ">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -100,7 +132,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkZ-HY-uSe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="943.47826086956525" y="104.46428571428571"/>
+            <point key="canvasLocation" x="1853.6231884057972" y="104.46428571428571"/>
         </scene>
         <!--Film Details Scroll View-->
         <scene sceneID="7pf-8n-dPc">
@@ -143,11 +175,50 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="STw-P3-nG1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="943.47826086956525" y="908.70535714285711"/>
+            <point key="canvasLocation" x="5352.1739130434789" y="184.82142857142856"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="4lE-Qb-tds">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="TqA-Jv-Coq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="fy0-az-ugv"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NjC-xO-gWx">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="972-bb-htd" kind="relationship" relationship="viewControllers" id="k3P-M0-bsN"/>
+                        <segue destination="zTA-oc-jHv" kind="relationship" relationship="viewControllers" id="0Ac-T4-2S5"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4SI-2X-BxY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="943.47826086956525" y="104.46428571428571"/>
+        </scene>
+        <!--People-->
+        <scene sceneID="k5J-wU-v0A">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zTA-oc-jHv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="People" image="person.3" catalog="system" id="knQ-p2-saJ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mkV-Qy-PmX">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HaV-77-dRn" kind="relationship" relationship="rootViewController" id="26m-Pf-RjL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y3q-bs-piN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1854" y="905"/>
         </scene>
     </scenes>
     <resources>
-        <image name="person.3.fill" catalog="system" width="128" height="61"/>
+        <image name="film" catalog="system" width="128" height="93"/>
+        <image name="person.3" catalog="system" width="128" height="62"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

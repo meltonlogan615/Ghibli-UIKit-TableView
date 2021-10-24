@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Films: Codable, Identifiable {
+struct Films: Codable, Identifiable, Equatable, Comparable {
   var id: String
   var title: String
   var original_title: String
@@ -19,3 +19,17 @@ struct Films: Codable, Identifiable {
   var running_time: String
   var rt_score: String
 }
+
+extension Films {
+  static func < (lhs: Films, rhs: Films) -> Bool {
+    return lhs.title < rhs.title
+  }
+}
+
+//extension Films {
+//  static func < (lhs: Films, rhs: Films) -> Bool {
+//    return lhs.release_date < rhs.release_date
+//  }
+//}
+
+
